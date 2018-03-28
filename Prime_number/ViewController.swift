@@ -20,6 +20,9 @@ class ViewController: UIViewController , UITextFieldDelegate{
     @IBAction func check(_ sender: UIButton) {
         let num = Int(text.text!)//소수 판단
         var tandf = true
+        if num == 1{
+            tandf = false
+        }
         if num != 1 && num != 2 {
         for i in 2 ..< num!{
             if num! % i == 0{
